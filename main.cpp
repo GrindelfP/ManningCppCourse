@@ -1,10 +1,13 @@
+#include <iostream>
 #include "TierOne/tierOne.h"
+#include "TierTwo/tierTwo.h"
 
 int main() {
-    tierOneTaskOne();
-    tierOneTaskTwo();
-    tierOneTaskThree();
+    using namespace testTwo;
+    TaskOne();
+    TaskTwo();
+    TaskThree();
+    printEntry(to_string(celsiusToFahrenheit(22)));
 
     return 0;
 }
-
