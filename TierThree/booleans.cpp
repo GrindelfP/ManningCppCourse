@@ -1,6 +1,7 @@
 #include <vector>
 #include "tierThree.h"
 #include "../commonHeaders.h"
+
 using namespace std;
 
 void booleans() {
@@ -37,8 +38,8 @@ void whileLoop() {
 
 
 void iterateList() {
-    vector<double> temps = { 13.3, 18.5, 19.9, 20.1, 16.65 };
-    for (double temp : temps) {
+    vector<double> temps = {13.3, 18.5, 19.9, 20.1, 16.65};
+    for (double temp: temps) {
         printLn(temp);
     }
 }
