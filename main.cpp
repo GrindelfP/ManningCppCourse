@@ -1,14 +1,16 @@
-#include "commonHeaders.h"
-#include "TierOne/tierOne.h"
-#include "TierTwo/tierTwo.h"
-#include "TierThree/tierThree.h"
-#include "TierFour/tierFour.hpp"
+#include "OOP/robot.hpp"
+#include "OOP/roboticArm.hpp"
 
 int main() {
-    vector<int> list = { 232233, 1421412, 0 };
-    printWithPrefix("A. Size of list is ", list.size());
-    tierFour::addZerosToList(list, 4);
-    printWithPrefix("C. Size of list is ", list.size());
+    TalosOneHL::Robot robotOne("R2D2", 35);
+    TalosOneHL::Robot robotTwo("G_I", 39);
+    robotOne.printInfo();
+    robotTwo.printInfo();
+
+    TalosOneHL::RoboticArm roboticArm("CanadArm", 4, 5000);
+    roboticArm.printInfo();
+    roboticArm.pickObject(3, 4);
+    roboticArm.putObject(3.23, 3.44);
 
     return 0;
 }
